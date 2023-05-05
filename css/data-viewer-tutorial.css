@@ -1,0 +1,638 @@
+@charset "utf-8";
+/* CSS Document */
+
+.extraneous-labels{
+	display: inline !important;
+}
+
+.browsers{
+	font-weight: normal;
+}
+
+.website-names{
+	font-weight: bold;
+}
+
+.big-tabs{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 2px solid #dbdbdb;
+	overflow: auto;
+	margin-bottom: 10px;
+	max-height: 100px;
+	transition: max-height 2s ease;
+}
+
+#basic-navigation{
+	box-sizing: border-box;
+	-moz-box-sizing; border-box;
+	-webkit-box-sizing: border-box;
+	border: 2px solid #dbdbdb;
+	overflow: auto;
+	margin-bottom: 10px;
+	max-height: 100px;
+	transition: max-height 2s ease;
+}
+
+#basic-navigation-label{
+	display: block;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#basic-navigation-label:hover {
+	color: #8a8a8a;
+	cursor: pointer;
+}
+
+#basic-navigation-content{
+	display: none;
+	overflow: auto;
+}
+
+#navCheck:checked ~ #basic-navigation-content {
+	display: block;
+	overflow: auto;
+}
+
+#sign-in-nav-content{
+	display: none;
+	overflow: auto;
+}
+
+#navigation-content{
+	display: none;
+	overflow: auto;
+}
+
+#measurements-content{
+	display: none;
+	overflow: auto;
+}
+
+#measurement-templates-content{
+	display: none;
+	overflow: auto;
+}
+
+#reports-content{
+	overflow: auto;
+	display: none;
+}
+
+#permissions-content{
+	display: none;
+	overflow: auto;
+}
+
+#sharing-content{
+	display: none;
+	overflow: auto;
+}
+
+#terrain-editing-content{
+	display: none;
+	overflow: auto;
+}
+
+#compatibility-content{
+	display: none;
+	overflow: auto;
+}
+
+#support-content{
+	display: none;
+	overflow: auto;
+}
+
+#tutorial-wrapper input[type=checkbox]:checked + div{
+	display: block;
+}
+
+#tutorial-wrapper label {
+	display: block;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#tutorial-wrapper label:hover {
+	cursor: pointer;
+	color: #8a8a8a;
+}
+
+#tutorial-wrapper{
+	margin-right: 15vw;
+	margin-left: 15vw;
+	font-family: 'Yu Gothic', sans-serif;
+}
+
+#tutorial-wrapper h2{
+	margin: 10px 10px 10px 10px;
+}
+
+#tutorial-wrapper h3{
+	margin: 10px 10px 10px 20px;
+}
+
+#tutorial-wrapper li{
+	font-size: 18px;
+}
+
+#intro h3 {
+	text-align: center;
+	line-height: 1.6;
+	font-weight: normal;
+}
+
+#smallLogo {
+	display: block;
+	overflow: auto;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 75px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+button {
+	border: 2px solid rgb(118, 118, 118);
+	margin: 3px;
+}
+
+#tutorial-title {
+	font: 36px 'Yu Gothic', sans-serif;
+	justify-content: center;
+	text-align: center;
+}
+
+#new-button {
+	display: inline-block;
+	padding: 1px 6px;
+	cursor: pointer;
+	border-radius: 4px;
+	border: 2px solid rgb(118,118,118);
+	margin-top: 3px;
+	margin-bottom: 3px;
+	background-color: rgb(239,239,239);
+	font: 14px 'Yu Gothic', sans-serif;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+ #wrapper {
+	 padding-left: 0;
+ }
+
+	#page-container {
+		position: relative;
+		min-height: 90vh;
+		
+	}
+
+        #page-wrapper {
+            width: 100%;
+            padding: 5px 15px;
+	    height: 100%;
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+        }
+
+         a {
+            color: #44b6e6;
+        }
+
+        body {
+            font: 14px 'Yu Gothic', sans-serif;
+        }
+
+        .title {
+            padding: 6px 12px;
+        }
+
+        .breadcrumb {
+            margin-bottom: 0;
+        }
+
+        #navbuttons .btn {
+            padding: 3px 6px;
+        }
+
+#user {
+	width: 90vw;
+	height: auto;	
+	top: 90px;
+	box-sizing: border-box;
+	font: 18px 'Yu Gothic', sans-serif;
+	vertical-align: middle;
+	overflow: auto;
+	margin: 15px;
+	margin-left: 60px;
+	display: block;
+}
+
+#clickDisplay {
+	display: inline;
+	font: 20px 'Yu Gothic', sans-serif;
+}
+
+#user div{
+	box-sizing: border-box;
+	vertical-align: middle;
+	margin: 15px;
+	overflow: auto;
+	margin-top: 5px;
+	min-width: max-content;
+}
+
+#user div div {
+	overflow: auto;
+	margin-top: 5px;
+	margin-left: 20px;
+	max-width: 332px;
+}
+
+#smallUserInfo {
+	font: 13.33px 'Yu Gothic', sans-serif;
+	float: left;
+}
+#profileDiv h2 {
+	float: left;
+	vertical-align: middle;
+	text-align: center;
+}
+#profileImg {
+/*	margin-top: 15px;*/
+	width: 35.7px;
+	height: 40px;
+	vertical-align: middle;
+}
+
+#userWrapper {
+	display: none;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s linear;
+	position: relative;
+}
+
+#userWrapper:focus {
+	display: block;
+	visibility: visible;
+	opacity: 1;
+	border: 1px solid black;
+	box-sizing: border-box;
+}
+
+.imageAnchor {
+	max-width: fit-content;
+}
+
+#signOut{
+	background-color: transparent;
+	border: 0px;
+	border-style: none;
+	border-color: none;
+	
+}
+
+header{
+	background: #1f1f1f;
+	min-height: 90px;
+	width: 100vw;
+}
+
+.header-inner {
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+
+#headerLogo {
+	float: left;
+	vertical-align: middle;;
+	padding: 15px;
+	max-height: 85px;
+	width: auto;
+}
+
+body {
+	background: #fff;
+}
+
+#signOutWrapper {
+	padding: 10px;
+	text-transform: uppercase !important;
+	display: block;
+	cursor: pointer;
+	border: 2px solid #ffffff;
+	margin-right: 15px;
+/*	margin-top: 15px;*/
+	vertical-align: middle;
+	float: right;	
+	background-color: transparent !important;
+	font: 13.33px 'Yu Gothic', sans-serif;
+	color: #ffffff;
+	max-width: 90px;
+	margin-bottom: 10px;
+	margin-right: 30px;
+}
+
+#signOutWrapper:hover {
+	color: #44b6e6;
+	border-color: #44b6e6;
+}
+
+.headerlinks {
+	padding: 10px;
+	text-transform: uppercase;
+	display: block;
+	cursor: pointer;
+	margin-right: 15px;
+/*	margin-top: 17px;*/
+	vertical-align: middle;
+	font: 13.33px 'Yu Gothic', sans-serif;
+	color: #ffffff;
+	float: right;
+}
+
+#highAccy:hover {
+	color: #44b6e6;
+	text-decoration: none;
+}
+
+#home:hover {
+	color: #44b6e6;
+	text-decoration: none;
+}
+
+#home {
+	color: #ffffff;
+}
+
+#highAccy {
+	color: #ffffff;
+}
+
+#tutorial-download {
+	color: #ffffff;
+}
+
+#tutorial-download:hover {
+	color: #44b6e6;
+	text-decoration: none;
+}
+
+.panel-primary {
+	border-color: #1f1f1f !important;
+}
+
+#findFile {
+	float: right;
+	font: 12px 'Yu Gothic', sans-serif;
+}
+
+#footer {
+	background-color: #201a16;
+	font: 36px 'Yu Gothic', sans-serif;
+	display: block;
+/*	position: absolute;
+	bottom: 0; */
+	width: 100vw;
+	min-height: 10vh;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#footer-inner {
+	padding: 64px 32px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: 1.6em;
+}
+
+.topnav {
+/*	visibility: hidden;*/
+}
+@media only screen and (max-width: 1136px) {
+/*.mobile-nav-toggle {
+	display: block;
+	box-sizing: border-box;
+	position: absolute;
+	right: 20px;
+	margin-top: -8px;
+	padding: 10px;
+	vertical-align: middle;
+	line-height: 16px;
+	cursor: pointer;
+	user-select: none;
+	color: #ffffff;
+	width: 22px;
+	height: 22px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;	
+	float: right;
+	margin-top: 15px;
+	margin-right: 15px;
+	&:hover div {
+		background-color: #a9a9a9;
+	}
+}
+*/
+
+#tutorial-wrapper{
+	margin-right: 5vw;
+	margin-left: 5vw;
+}
+
+h2 {
+	font-size: 24px !important;
+}
+
+#tutorial-content-wrapper h3 {
+	font-size: 20px !important;
+	font-weight: bold !important;
+}
+
+li {
+	font-size: 17px !important;
+}
+
+#user {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.imageAnchor {
+	max-width: fit-content;
+}
+
+#user img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#overlay-button {
+	margin-top: 15px;
+	margin-right: 15px;
+	margin-left: 15px;
+	vertical-align: middle;
+	cursor: pointer;
+	user-select: none;
+	z-index: 5;
+	padding: 26px 11px;
+	float: right;
+}
+#overlay-button span {
+	height: 2px;
+	width: 27px;
+	background-color: #ffffff;
+	display: block;
+	transition: all .2s ease-in-out;
+	visibility: visible;
+	content: "";
+	transform-origin: center;
+}
+
+.menu {
+	position: relative;
+	top: 0px;
+	height: 2px;
+	width: 27px;
+	background: #ffffff;
+	vertical-align: middle;
+}
+
+#overlay-button span::before {
+	position: relative;
+	top: -8px;
+	visibility: visible;
+}
+
+#overlay-button span::after {
+	position: relative;
+	top: 6px;
+	visibility: visible;
+}
+
+#overlay-button span::before,
+#overlay-button span::after {
+	height: 2px;
+	width: 27px;
+	display: block;
+	background-color: #ffffff;
+	content: "";
+	transition: all .2s ease-in-out;
+}
+
+#overlay-button:hover span,
+#overlay-button:hover span::before,
+#overlay-button:hover span::after {
+	background: #ffffff;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+#overlay-input:checked ~ #overlay-button:hover span,
+#overlay-input:checked ~ #overlay-button span {
+	background: transparent;
+}
+
+#overlay-input:checked ~ #overlay-button span::before {
+	top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	transform-origin: center;
+	transform: rotate(45deg) translateY(1px);
+	/*top: 0;*/
+	opacity: 1;
+}
+#overlay-input:checked ~ #overlay-button span::after {
+	transform-origin: center;
+	top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	/*top: 0;*/
+	transform: rotate(135deg) translateY(1px);
+}
+
+#topnav {
+	height: 100%;
+	width: 260px;
+	background: #1b1613;
+	z-index: 2;
+	visibility: hidden;
+	position: fixed;
+	top: 90px;
+	right: 0px;
+}
+#overlay-input:checked ~ #topnav {
+	visibility: visible;
+	height: 100%
+	transition: height 0s 0s linear, visibility 0s .14s linear;
+}
+#topnav div,
+#topnav img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	list-style-type: none;
+	margin: auto;
+	float: none;
+	padding: 10px;
+}
+
+#topnav #signOutWrapper {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#topnav div a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5em;
+}
+#topnav div a:hover {
+	color: #44b6e6;
+}
+/*
+.topnav {
+	display: none;
+}
+
+.topnav-open {
+	display: block;
+	vertical-align: middle;
+	height: 100%;
+	width: 260px;
+	top: 0;
+	right: 0;
+	line-height: 1em;
+	background-color: #1b1613;
+	position: fixed;
+	z-index: 9999;
+	text-align: left;
+	transition: height 0s .14s linear, visibility 0s 0s linear;
+}*/
+}

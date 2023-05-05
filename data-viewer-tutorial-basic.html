@@ -1,0 +1,638 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="https://kamyarphoto.s3.us-east-2.amazonaws.com/Website+Resources/More+Square+On+White.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="css/data-viewer-tutorial.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap-theme.min.css" integrity="sha384-jzngWsPS6op3fgRCDTESqrEJwRKck+CILhJVO5VvaAZCq8JYf8HsR/HPpBOOPZfR" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+	<title>Data Viewer Basics</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div id="page-container">
+	<header class="header">
+		<div id="headerWrapper">
+		<div class="header-inner clearfix">
+			<img id="headerLogo" src="https://kamyarphoto.s3.us-east-2.amazonaws.com/Website+Resources/Less+Garbage+On+Color.png">
+			<input type="checkbox" id="overlay-input" />
+			<label for="overlay-input" id="overlay-button"><span class="menu"></span></label>
+			<div class="topnav" id="topnav">
+			<div id="signOutWrapper">
+				<button class="profile" id="signOut">Sign Out</button>
+			</div>
+			<div class="headerlinks">
+				<a id="tutorial-download" href="/download-tutorial">Download Site Tutorial</a>
+			</div>
+			<div class="headerlinks">
+				<a id="highAccy" href="https://kamyarphoto.prpellr.com/login/">Data Viewer</a>
+			</div>
+			<div class="headerlinks">
+				<a id="home" href="https://kamyarphoto.com">Main Website</a>
+			</div>
+			</div>
+		</div>
+		</div>
+	</header>
+	<div id="tutorial-wrapper">
+		<div id="intro">
+			<h1 id="tutorial-title">Data Viewer Basics</h1>
+			<h3>Here you will find the information you need to start using our Data Viewer.</h3>
+			<div></div>
+			<h3>Click each section to read the tutorial.</h3>
+		</div>
+		<div id="tutorial-content-wrapper">
+		<div id="sign-in-nav" class="big-tabs">
+			<label for="sign-in-navCheck" id="sign-in-nav-label">
+				<h2>Sign In and User Information</h2>
+			</label>
+			<input type="checkbox" id="sign-in-navCheck"/>
+			<div id="sign-in-nav-content">
+				<div id="signing-in">
+					<h3>How to Sign In</h3>
+					<div>
+						<ul>
+							<li>Go to <a href="https://kamyarphoto.prpellr.com">kamyarphoto.prpellr.com</a> and enter your username and password.</li>
+							<br>
+							<li>You will be redirected to your list of available sites.</li>
+							<br>
+							<li>Click on the site you would like to view, and you will have access to each dataset.</li>
+							<br>
+						</ul>
+					</div>
+				</div>
+				<div id="signing-out">
+					<h3>How to Sign Out</h3>
+					<div>
+						<ul>
+							<li>Click your name at the top right of the page.</li>
+							<br>
+							<li>You will see a dropdown appear.</li>
+							<br>
+							<li>Click 'Sign Out' at the bottom.</li>
+							<br>
+							<li>You will be redirected back to the login page.</li>
+							<br>
+						</ul>
+					</div>
+				</div>
+				<div id="user-info">
+					<h3>Viewing your User Information</h3>
+					<div>
+						<ul>
+							<li>Click your name at the top right of the page.</li>
+							<br>
+							<li>You will see a dropdown appear.</li>
+							<br>
+							<li>Click 'Profile'</li>
+							<br>
+							<li>This will show you your user information.</li>
+							<br>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="navigation" class="big-tabs">
+			<label for="navigationCheck" id="navigation-label">
+				<h2>Navigation</h2>
+			</label>
+			<input type="checkbox" id="navigationCheck"/>
+			<div id="navigation-content">
+				<div id="measure-tab">
+					<h3>The 'Measure' Tab</h3>
+					<div>
+						<ul>
+							<li>Left Click</li>
+								<ul>
+									<li>Holding 'Left Click' allows you to drag the map around.</li>
+									<ul>
+										<li>It will not rotate the map or change the zoom.</li>
+									</ul>
+								</ul>
+							<br>
+							<li>Right Click</li>
+							<ul>
+								<li>Holding 'Right Click' will allow you to alter the zoom by moving your mouse forwards to zoom further in or backwards to zoom further out.</li>
+							</ul>
+							<br>
+							<li>Middle Click</li>
+							<ul>
+								<li>'Middle Clicking' is when you 'Click' with the Scroll Wheel</li>
+								<br>
+								<li>Holding 'Middle Click' and moving the mouse will allow you to alter the 3D View of your dataset.</li>
+								<br>
+							</ul>
+							<li>Scroll Wheel</li>
+							<ul>
+								<li>Scrolling up will zoom in on the map.</li>
+								<br>
+								<li>Scrolling down will zoom out from the map.</li>
+								<br>
+							</ul>
+							<li>Timeline</li>
+							<ul>
+								<li>Select the timeline to see older or newer datasets.</li>
+								<br>
+								<li>By dragging the selector between the dates, you can see progress fade between each dataset.</li>
+								<br>
+							</ul>
+							<li>For information about the tools in the 'Measure' Tab see 'Measurements' later in the tutorial.</li>
+							<br>
+						</ul>
+					</div>
+				</div>
+				<div id="designs-tab">
+					<h3>The Designs Tab</h3>
+					<div>
+						<ul>
+							<li>Here you can toggle designs on and off in the map view.</li>
+							<br>
+							<li>To upload a design, simply hit 'Import a Layer' then drag and drop the design into the window.</li>
+							<ul>
+								<li>File Formats must be:</li>
+								<ul>
+									<li>DXF</li>
+									<li>TTM</li>
+									<li>KMZ</li>
+									<li>KML</li>
+									<li>CZML</li>
+								</ul>
+							</ul>
+							<br>
+						</ul>
+					</div>
+				</div>
+				<div id="survey-tab">
+					<h3>The Survey Tab</h3>
+					<div>
+						<ul>
+							<li>Select the Map Layer(s) you want to view.</li>
+							<ul>
+								<li>Orthophoto</li>
+								<ul>
+									<li>The 'Orthophoto' Layer is the finished photo of the entire site.</li>
+								</ul>
+								<br>
+								<li>Terrain</li>
+								<ul>
+									<li>The 'Terrain' Layer is what gives the map its 3D look.</li>
+									<li>Toggling this off will make your view of the map flat.</li>
+								</ul>
+								<br>
+								<li>Camera Positions</li>
+								<ul>
+									<li>The 'Camera Positions' Layer gives you a look at each spot the drone took a photo, including the elevation.</li>
+								</ul>
+								<br>
+								<li>Elevation Map</li>
+								<ul>
+									<li>The 'Elevation Map' Layer will show you a heat map of the elevations on site.</li>
+									<li>The colors representing different elevations can be altered in the box on the left of the screen.</li>
+								</ul>
+								<br>
+								<li>Gradient Map</li>
+								<ul>
+									<li>The 'Gradient Map' Layer will color code the gradients on site.</li>
+									<li>The colors representing different gradients can be altered in the box on the left of the screen.</li>
+								</ul>
+								<br>
+								<li>Contour Lines</li>
+								<ul>
+									<li>The 'Contour Lines' Layer will show contour lines for different elevations.</li>
+								</ul>
+								<br>
+							</ul>
+						</ul>
+					</div>
+				</div>
+				<div id="data-overlay">
+					<h3>Data Overlays</h3>
+					<div>
+						<ul>
+							<li>Users with 'Edit' Level Access can upload useful files as layers to the dataset.</li>
+							<br>
+							<li>Supported File Formats:</li>
+							<ul>
+								<li>GeoJSON</li>
+								<li>DXF</li>
+								<li>KML</li>
+								<li>KMZ</li>
+								<li>CZML</li>
+							</ul>
+							<br>
+							<li>See 'Access Levels' later in the tutorial for more information on the different user permissions.</li>
+							<br>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="measurements" class="big-tabs">
+			<label for="measurementsCheck" id="measurement-templates-label">
+				<h2>Measurements</h2>
+			</label>
+			<input type="checkbox" id="measurementsCheck"/>
+			<div id="measurements-content">
+				<div id="making-measurements">
+					<h3>Making Measurements Basic Controls</h3>
+					<div>
+						<ul>
+							<li>Click on the type of Measurement you would like to make:</li>
+							<ul>
+								<li>Lines</li>
+								<li>Polygons</li>
+								<li>Points</li>
+							</ul>
+							<br>
+							<li>Select your Preferred Template</li>
+							<ul>
+								<li>See 'Measurement Templates' later in this tutorial for more information.</li>
+							</ul>
+							<br>
+							<li>Left Click the map to place points. (The vertices of your Measurement)</li>
+							<br>
+							<li>To finish a Measurement, click your last point (vertex) and it will finalize the shape.</li>
+							<br>
+							<li>Once the Measurement is drawn, a box will appear on the left with more options.</li>
+							<br>
+						</ul>
+					</div>
+				</div>
+				<div id="moving-sharing-deleting">
+					<h3>Moving, Sharing, and Deleting Measurements</h3>
+					<div>
+						<ul>
+							<li>Select the checkbox next to the Measurement you want to move, share, or delete.</li>
+							<br>
+							<li>At the bottom of the list of measurements there is a white rounded shape with your options:</li>
+							<br>
+							<ul>
+								<li>Move To</li>
+								<ul>
+									<li>Select or create a folder to move the measurement.</li>
+								</ul>
+								<br>
+								<li>Share</li>
+								<ul>
+									<li>Creates a shareable link to that measurement.</li>
+									<br>
+									<li>The link can be accessed by anyone with login access to the site.</li>
+									<br>
+								</ul>
+								<br>
+								<li>Delete</li>
+								<ul>
+									<li>Deletes the selected measurement from the dataset permanently.</li>
+								</ul>
+								<br>
+								<li>Three Dot Menu</li>
+									<li>Export as KML</li>
+									<ul>
+										<li>Saves the dataset as a KML file</li>
+									</ul>
+									<br>
+									<li>Export as DXF (Outline)</li>
+									<ul>
+										<li>Saves the dataset as a DXF file</li>
+									</ul>
+									<br>
+									<li>Duplicate to this dataset</li>
+									<ul>
+										<li>Duplicates the selected measurement to the dataset, can be modified separate of the original.</li>
+									</ul>
+									<br>
+									<li>Copy to another dataset</li>
+									<ul>
+										<li>Copies the measurement to another dataset for comparison or modification.</li>
+									</ul>
+									<br>
+									<li>Promote to site</li>
+									<ul>
+										<li>By default, measurements are made dataset by dataset.</li>
+										<li>Selecting 'Promote to Site' makes that measurement available on all previous and future datasets.</li>
+									</ul>
+									<br>
+								<br>
+							</ul>
+						</ul>
+					</div>
+				</div>
+				<div id="types-of-measurements">
+					<h3>Types of Measurements</h3>
+					<div>
+						<ul>
+							<li>Lines</li>
+							<ul>
+								<li>Drawing a line on the map will extract measurements only on portions of the dataset directly under the line.</li>
+								<ul>
+									<li>These are used to pull measurements like 'Gradient' or 'Elevation' of the dataset beneath it.</li>
+									<li>This cannot be used for something that requires another dimension, like 'Surface Area'</li>
+								</ul>
+								<br>
+							</ul>
+							<br>
+							<li>Polygons</li>
+							<ul>
+								<li>Drawing a Polygon on the map will result in measurements from the area under the drawn portion as well as in-between each vertex.</li>
+								<br>
+								<li>Unlike a Line, it will always take measurements by circling back to the first point upon completion.</li>
+								<br>
+							</ul>
+							<br>
+							<li>Points</li>
+							<ul>
+								<li>Points only extract data from what's directly underneath the point.</li>
+								<br>
+								<li>They can effectively be used for notes without making large distracting shapes on screen.</li>
+								<br>
+							</ul>
+							<br>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="measurement-templates" class="big-tabs">
+			<label for="measurement-templatesCheck" id="measurement-templates-label">
+				<h2>Measurement Templates</h2>
+			</label>
+			<input type="checkbox" id="measurement-templatesCheck"/>
+			<div id="measurement-templates-content">
+				<div id="lines">
+					<h3>Lines/Cross Section</h3>
+					<div>
+						<ul>
+							<li>Berm Check</li>
+							<ul>
+								<li>Measure safety berms, bunds, windrows, or other barriers. Draw a line across the barrier to calculate the height and widths.</li>
+							</ul>
+							<br>
+							<li>Cross-Section Comparison</li>
+							<ul>
+								<li>Draw a line across an area of cut or fill, then compare levels of the line section between surveys or against a design.</li>
+							</ul>
+							<br>
+							<li>Distance</li>
+							<ul>
+								<li>Measure the distance between two points.</li>
+							</ul>
+							<br>
+							<li>Elevation Difference</li>
+							<ul>
+								<li>Draw a line between two or more points and calculate the difference between the points.</li>
+							</ul>
+							<br>
+							<li>Road Grade</li>
+							<ul>
+								<li>Draw a line along a section of road, pavement, or track to calculate the grade as a ratio. (i.e. 1:9)</li>
+							</ul>
+							<br>
+						</ul>
+					</div>
+				</div>
+				<div id="polygons">
+					<h3>Polygons</h3>
+					<div>
+						<ul>
+							<li>Basic Volume</li>
+							<ul>
+								<li>Measure the Volume of Material within a Polygon.</li>
+							</ul>
+							<br>
+							<li>Compare to Latest Design</li>
+							<ul>
+								<li>Measure the difference in volume between the selected survey and the most recently dated design surface.</li>
+							</ul>
+							<br>
+							<li>Compare to Previous Survey</li>
+							<ul>
+								<li>Measure the progress or change in volume between the selected survey and the most recently dated design surface.</li>
+							</ul>
+							<br>
+							<li>Earthworks Progress</li>
+							<ul>
+								<li>Measure the earthworks progress from last survey and current survey to design.</li>
+							</ul>
+							<br>
+							<li>Stockpile</li>
+							<ul>
+								<li>Measure a stockpile on even ground (flat or sloped.) For material with an uneven base, use the Volume Compare tool with a design surface.</li>
+							</ul>
+							<br>
+							<li>Surface Area</li>
+							<ul>
+								<li>Measure the surface area within a Polygon.</li>
+							</ul>
+							<br>
+							<li>Volume from Lowest Point</li>
+							<ul>
+								<li>Measure using a horizontal base plane defined by the lowest point of your Polygon. Useful for measuring pit walls, benches, and blast volumes.</li>
+							</ul>
+							<br>
+						</ul>
+					</div>
+				</div>
+				<div id="points">
+					<h3>Points</h3>
+					<div>
+						<ul>
+							<li>Elevation History</li>
+							<ul>
+								<li>Track the change in height of a specific point over the course of multiple surveys.</li>
+							</ul>
+							<br>
+							<li>Point of Interest</li>
+							<ul>
+								<li>Mark features of interest on your site for easy record keeping or sharing with your team.</li>
+							</ul>
+							<br>
+							<li>Safety Hazard</li>
+							<ul>
+								<li>Mark safety hazards and assign severity.</li>
+							</ul>
+							<br>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="reports" class="big-tabs">
+			<label for="reportsCheck" id="reports-label">
+				<h2>Reports</h2>
+			</label>
+			<input type="checkbox" id="reportsCheck"/>
+			<div id="reports-content">
+				<div id="pdf">
+					<h3>Exporting PDF Reports</h3>
+					<div>
+						<ul>
+							<li>Above the map, click the dropdown for 'Reports'</li>
+							<br>
+							<li>Select 'PDF Report'</li>
+							<ul>
+								<li>Only Visible Measurements (Measurements with Checked Boxes) are rendered to the report.</li>
+							</ul>
+							<br>
+							<li>Select your content preferences, and hit 'Download Full Report'</li>
+							<br>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="permissions" class="big-tabs">
+			<label for="permissionsCheck" id="permissions-label">
+				<h2>User Permissions</h2>
+			</label>
+			<input type="checkbox" id="permissionsCheck"/>
+			<div id="permissions-content">
+				<div id="view">
+					<h3>'View' Level Access</h3>
+					<div>
+						<ul>
+							<li>Most Restricted Access Level</li>
+							<br>
+							<li>Users can only view existing datasets. No measurements or designs are visible. No data, reports, or measurements can be created, edited, or exported.</li>
+							<br>
+						</ul>
+					</div>
+				</div>
+				<div id="export">
+					<h3>'Export' Level Access</h3>
+					<div>
+						<ul>
+							<li>Users can generate reports, export measurements, and download any processed files for the existing dataset.</li>
+						</ul>
+					</div>
+				</div>
+				<div id="edit">
+					<h3>'Edit' Level Access</h3>
+					<div>
+						<ul>
+							<li>In addition to the functionality of 'View' and 'Export', users can create, edit, and save measurements.</li>
+							<br>
+							<li>Users can also upload files to the dataset and change settings for a site.</li>
+							<br>
+							<li>Those settings include:</li>
+							<ul>
+								<li>Project Name</li>
+								<li>Coordinate Reference System</li>
+								<li>Units of Measurement</li>
+							</ul>
+							<br>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="sharing" class="big-tabs">
+			<label for="sharingCheck" id="sharing-label">
+				<h2>Sharing Datasets and Measurements</h2>
+			</label>
+			<input type="checkbox" id="sharingCheck"/>
+			<div id="sharing-content">
+				<div id="sharing-measurement">
+					<h3>Sharing Individual Measurements</h3>
+					<div>
+						<ul>
+							<li>Select the checkbox next to the measurement you want to share.</li>
+							<br>
+							<li>At the bottom of the list of measurements, there is a white rounded shape with your options. Hit 'Share'</li>
+							<br>
+							<li>This creates a shareable link to that measurement. The link can be accessed by anyone with a login connected to that site.</li>
+							<br>
+						</ul>
+					</div>
+				</div>
+				<div id="sharing-site">
+					<h3>Sharing access to the Full Site</h3>
+					<div>
+						<ul>
+							<li>Near the top right of the page you will see the word 'Share.'</li>
+							<br>
+							<li>Click 'Share' and enter the email of the user you want to add.</li>
+							<br>
+							<li>By Default, the new user will only have 'View' Permissions.</li>
+								<ul>
+									<li>In order to change that, contact your Assigned Pilot.</li>
+								</ul>
+							<br>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="terrain-editing" class="big-tabs">
+			<label for="terrain-editingCheck" id="terrain-editing-label">
+				<h2>Terrain Editing</h2>
+			</label>
+			<input type="checkbox" id="terrain-editingCheck"/>
+			<div id="terrain-editing-content">
+				<div id="terrain">
+					<h3>Modifying Terrain to Improve Accuracy</h3>
+					<div>
+						<ul>
+							<li>The Terrain on each dataset can be edited so things like trees or vehicles are not taken into account for measurements.</li>
+							<ul>
+								<li>Your Assigned Pilot will edit away vehicles during processing.</li>
+								<br>
+								<li>If you see something we might have missed or that you want to be taken out of the dataset, simply make a measurement and 'Share' it with your Assigned Pilot. We will remove it from the terrain.</li>
+								<br>
+							</ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="compatibility" class="big-tabs">
+			<label for="compatibilityCheck">
+				<h2>Website Compatibility</h2>
+			</label>
+			<input type="checkbox" id="compatibilityCheck"/>
+			<div id="compatibility-content">
+				<div id="browser-compatibility">
+					<h3>Data Viewer Compatible Browsers</h3>
+					<div>
+						<ul>
+							<li>Currently, only Chrome Version 64 or Higher is compatible with the Data Viewer.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="support" class="big-tabs">
+			<label for="supportCheck">
+				<h2>Support</h2>
+			</label>
+			<input type="checkbox" id="supportCheck"/>
+			<div id="support-content">
+				<div id="support-contact">
+					<h3>Contact</h3>
+					<div>
+						<ul>
+							<li>If you run into any issues, please email <a href="mailto: service@kamyarphoto.com">service@kamyarphoto.com</a> and we will take care of you.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+	</div>
+
+	<img id="smallLogo" src="https://kamyarphoto.s3.us-east-2.amazonaws.com/Website+Resources/More+Square+On+White.png">
+	</div>	
+	<footer id="footer">
+	<div id="footer-inner">
+	</div>
+	</footer>
+	<script src="js/data-viewer-tutorial.js"></script>
+	<script src="js/amazon-cognito-identity.min.js"></script>
+	<script src="js/config.min.js"></script>
+	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.685.0.min.js"></script>
+	<!-- <script src="js/404.min.js"></script> -->
+</body>
+</html>
